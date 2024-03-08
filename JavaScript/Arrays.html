@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Arrays 1,2,3</title>
+</head>
+
+<body>
+    <h1>Arrays</h1>
+
+    <script>
+     // Activity 1: Write a JavaScript program to sum values of an array.
+      //Create an array
+      const numbers = [1,3,5,7,9];
+     // Create a variable
+     let sum = 0
+    // start a loop
+
+    for (let i = 0; i < numbers.length; i++) {
+        sum += numbers[i]; 
+    }
+    //show result
+    console.log(sum)
+  </script>
+<script>
+    // Activity 2 Write a JavaScript program to calculate the average value of an array elements.
+    // Create program to calculate average
+    const numbers3 = [20, 30, 25, 35, -16, 60, -100];
+    // Create a variable
+    sum = 0;
+    
+    // Start a loop
+    for (let i = 0; i < numbers3.length; i++) {
+        sum += numbers3[i]; 
+    }
+    
+    // Show result
+    console.log(sum);
+    console.log(sum / numbers3.length);
+    
+    </script>
+        <script>
+            // Activity 3 Write a JavaScript program to find the maximum and minimum value of an array.
+            //Create an array
+            const numbers4 = [25, 14, 56, 15, 36, 56, 77, 18, 29, 49];
+            let max = numbers4[0]; // initialize to the first value
+            let min = numbers4[0]
+            for (let i = 1; i < numbers4.length; i++) {
+             if (numbers4[i] > max) {
+               max = numbers4[i];
+    }
+    console.log(max);
+
+}
+        for (let i = 1; i < numbers4.length; i++) {
+             if (numbers4[i] < min) {
+               min = numbers4[i];
+
+console.log(min);
+             }
+            }
+        </script>
+
+</body>
+
+</html>

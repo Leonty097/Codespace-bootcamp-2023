@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Activity 1 - Vanilla JS DOM</title>
+    </head> 
+    <body>
+        <p id='text'>Vanilla JS DOM</p> 
+        <div>
+            <button id="jsstyle" onclick="myFunction()">Style</button>
+        </div>
+
+        <script>
+            // Initial modification of text
+            document.getElementById("text").innerHTML = "Modified text";
+
+            function myFunction() {
+                // Get the button element
+                let x = document.getElementById("jsstyle");
+
+                // Modify the innerHTML of the button
+                x.innerHTML = "modified style";
+
+                // Change the style of the button
+                x.style.backgroundColor = "blue";
+                x.style.color = "white";
+            }
+        </script>
+    </body>
+</html>

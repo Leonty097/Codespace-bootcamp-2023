@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>JS Loops</title>
+</head>
+
+<body>
+    <h1>Loops 1</h1>
+
+    <script>
+        // Initialize the loop counter to 0
+        let countLoop1 = 0;
+    
+        // Loop from 0 to 15
+        while (countLoop1 <= 15) {
+            // Check if the current number is even or odd
+            if (countLoop1 % 2 == 0) {
+                // If even, log a message indicating it's even
+                console.log(countLoop1 + " is even.");
+            } else {
+                // If odd, log a message indicating it's odd
+                console.log(countLoop1 + " is odd.");
+            }
+    
+            // Increment the loop counter by 1
+            countLoop1 += 1;
+        }
+    </script>
+    <script>
+        // Prompt the user to enter a number and how many times it should be multiplied
+        let inputNumber = parseInt(prompt('Enter a number: '));
+        let counter2 = parseInt(prompt('Enter how many times next to be multiplied by: '));
+    
+        // Initialize a counter for the multiplication loop
+        let ddd = 0;
+    
+        // Loop until the multiplication counter reaches the specified value
+        while (ddd <= counter2) {
+            // Print the multiplication operation and its result
+            console.log(inputNumber, " x ", ddd, " | Result =", inputNumber * ddd);
+            
+            // Increment the multiplication counter by 1
+            ddd += 1;
+        }
+    </script>
+</body>
+
+</html>

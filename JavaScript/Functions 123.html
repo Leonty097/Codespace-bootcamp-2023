@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Functions 1,2,3</title>
+</head>
+
+<body>
+    <h1>Functions</h1>
+
+    <script>
+        //Activity 1 Write 2 JavaScript functions to:  show the array content & find the max value in the array
+        console.log("Activity 1");
+
+        // Define the sample array
+        const array1 = [1, 3, 5, 7, 9];
+
+        // Define function to show content
+        function showArrayContent() {
+            // Show array on console
+            console.log("Sample numbers:", array1);
+        }
+
+        // Call the function to execute it
+        showArrayContent();
+
+        // Create function to find the max value
+        function maxValue() {
+            // Initialize max to the first element of the array
+            let max = array1[0];
+
+            // Loop through the array to find the max value
+            for (let i = 1; i < array1.length; i++) {
+                if (array1[i] > max) {
+                    max = array1[i];
+                }
+            }
+
+            // Show max on console
+            console.log("Max value:", max);
+        }
+
+        // Call the function to execute it
+        maxValue();
+    </script>
+
+     <script>
+        //Activity 2 Write a JavaScript function to calculate the factorial of a number
+        console.log("Activity 2");
+        //define the variable desingned to be the number factorial of
+        let inputNumber = parseInt(prompt('Enter a number: '));
+        //define factorial function using for
+        function Numberfactorial() {
+         // Initialize counter to 1
+         let counter = 1;
+
+        for (let i = 1; i <= inputNumber; i++) {
+                counter *= i;
+            }
+
+            console.log("For Number " + inputNumber + " the factorial is: " + counter);
+        }
+          // Call the function to execute it
+           Numberfactorial();
+        </script>
+        
+        <script>
+            // Activity 3 Write a JavaScript function to check if a number is prime or not
+            console.log("Activity 3");
+
+            // Define the variable designed to be checked
+            let primeNumberInput = parseInt(prompt("Enter a number: "));
+
+            // Create an array of 99 elements with numbers from 2 to 100 to be compared (starts on 0 so I added a +2)
+            const elements100 = Array.from({ length: 99 }, (_, index) => index + 2);
+
+            // Define prime function 
+            function primeNumber() {
+                let isPrime = true;
+
+                for (let i = 0; i < elements100.length; i++) {
+                    if (primeNumberInput % elements100[i] === 0) {
+                        isPrime = false;
+                        break;
+                    }
+                }
+
+                if (isPrime) {
+                    console.log("Number " + primeNumberInput + " is prime");
+                } else {
+                    console.log("Number " + primeNumberInput + " is not prime");
+                }
+            }
+
+            // Call the function to execute it
+            primeNumber();
+
+
+        </script>
+</body>
+
+</html>

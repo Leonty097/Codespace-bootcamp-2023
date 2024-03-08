@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Activity 2 - Vanilla JS DOM</title>
+</head>
+<body>
+    <h1>Calculate a Sphere Volume</h1>
+    <div class="col-md-4">
+        <form>
+            <label for="Radius">Radius:</label>
+            <input type="number" id="Radius" name="Radius" placeholder="Enter Radius" required>
+        </form>
+    </div>
+    <div class="col-md-4">
+        <form>
+            <label for="Volume">Volume:</label>
+            <input type="number" id="Volume" name="Volume" placeholder="Result" readonly>
+        </form>
+    </div>
+    <div class="col-md-8">
+        <button onclick="calculateVolume()">Calculate</button>
+    </div>
+
+    <script>
+        function calculateVolume() {
+            // Get the radius value
+            let radius = parseFloat(document.getElementById("Radius").value);
+
+            // Calculate the sphere volume
+            let sphereVolume = (4.0 / 3) * Math.PI * Math.pow(radius, 3);
+
+            // Update the Volume input with the result
+            document.getElementById("Volume").value = sphereVolume.toFixed(2);
+        }
+    </script>
+</body>
+</html>
